@@ -74,6 +74,8 @@ refMap_t reflectorMap[]={
    {24,  0}, {25, 19}
 };
 
+
+// This is just a test string for basic functionality
 char refString[]="ABCDEFGDIJKGMKMIEBFTCVVJAT";
 
 int findMatch(cipherPair_t *cmap, char inChar)
@@ -104,11 +106,10 @@ int main( int argc, char *argv[] )
    int dbgOn=0, foundEnd=0;
    FILE *fpIn, *fpOut;
    int lineSz=128;
-   int bytesRd=0;
 
    // Initial conditions for machine
-   int r1Idx=12, r2Idx=2, r3Idx=10, inputIdx=0, idx, rIdx, rDiff;
-   int notch1Idx=16, notch2Idx=4, notch3Idx=21;
+   int r1Idx=12, r2Idx=2, r3Idx=10, inputIdx=0, idx, rIdx;
+   int notch2Idx=4, notch3Idx=21;
 
 
    if(argc == 1 || argc == 2)
